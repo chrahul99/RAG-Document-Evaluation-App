@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intelligent Document Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">ID</span>
+        <div>
+          <strong>Document Assistant</strong>
+          <small>RAG + Evaluation</small>
+        </div>
+      </div>
+      <nav>
+        <a href="#upload">Upload</a>
+        <a href="#ask">Ask</a>
+        <a href="#eval">Evaluation</a>
+        <a href="#history">History</a>
+      </nav>
+      <div class="runtime">
+        <span>Demo mode</span>
+        <strong>Static Netlify UI</strong>
+      </div>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Resume project demo</p>
+          <h1>Intelligent Document Assistant with RAG and Evaluation</h1>
+          <p>
+            A production-style AI system for PDF ingestion, semantic search,
+            grounded answers, source transparency, and RAG quality metrics.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#ask">View workflow</a>
+            <a class="button secondary" href="#architecture">Architecture</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Application preview">
+          <div class="panel-header">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="question-card">
+            <small>Question</small>
+            <p>What does the document say about retrieval quality?</p>
+          </div>
+          <div class="answer-card">
+            <small>Grounded answer</small>
+            <p>
+              The system measures retrieval quality using source relevance
+              scores, retrieval latency, and dashboard averages.
+            </p>
+          </div>
+          <div class="source-row">
+            <span>rag_system_overview.pdf</span>
+            <strong>0.91</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" id="eval">
+        <article>
+          <span>Answer relevance</span>
+          <strong>0.86</strong>
+        </article>
+        <article>
+          <span>Faithfulness</span>
+          <strong>0.92</strong>
+        </article>
+        <article>
+          <span>Retrieval latency</span>
+          <strong>0.42s</strong>
+        </article>
+        <article>
+          <span>Chunks indexed</span>
+          <strong>248</strong>
+        </article>
+      </section>
+
+      <section class="grid" id="upload">
+        <div>
+          <h2>Upload Documents</h2>
+          <p>
+            The local Streamlit app supports multiple PDF uploads,
+            drag-and-drop ingestion, upload status, and file tracking.
+          </p>
+        </div>
+        <div class="dropzone">
+          <span>PDF</span>
+          <strong>Drop multiple PDF files</strong>
+          <small>Extraction, cleaning, chunking, embeddings, ChromaDB</small>
+        </div>
+      </section>
+
+      <section class="grid reverse" id="ask">
+        <div class="chat-window">
+          <div class="message user">Summarize the evaluation framework.</div>
+          <div class="message ai">
+            The framework measures answer relevance, context relevance,
+            faithfulness, hallucination risk, retrieval quality, and latency.
+          </div>
+        </div>
+        <div>
+          <h2>Ask Grounded Questions</h2>
+          <p>
+            Retrieved chunks are passed into a guarded prompt that tells the
+            model to answer only from uploaded documents and show sources.
+          </p>
+        </div>
+      </section>
+
+      <section class="architecture" id="architecture">
+        <h2>Architecture</h2>
+        <div class="pipeline">
+          <span>PDFs</span>
+          <span>PyPDF</span>
+          <span>Chunks</span>
+          <span>Embeddings</span>
+          <span>ChromaDB</span>
+          <span>LLM</span>
+          <span>Evaluation</span>
+        </div>
+      </section>
+
+      <section class="history" id="history">
+        <h2>History</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Question</th>
+              <th>Faithfulness</th>
+              <th>Latency</th>
+              <th>Sources</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>What is the RAG workflow?</td>
+              <td>0.94</td>
+              <td>1.8s</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>How is hallucination risk measured?</td>
+              <td>0.89</td>
+              <td>1.6s</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

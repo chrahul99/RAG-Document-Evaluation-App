@@ -1,0 +1,13 @@
+streamlit>=1.35.0
+langchain>=0.2.12
+langchain-community>=0.2.11
+langchain-chroma>=0.1.2
+langchain-openai>=0.1.20
+langchain-ollama>=0.1.1
+chromadb>=0.5.5
+pypdf>=4.3.1
+python-dotenv>=1.0.1
+pandas>=2.2.2
+plotly>=5.23.0
+deepeval>=1.0.0
+reportlab>=4.2.2

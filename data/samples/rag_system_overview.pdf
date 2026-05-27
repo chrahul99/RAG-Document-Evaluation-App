@@ -1,0 +1,58 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1099 >>
+stream
+BT
+/F1 11 Tf
+72 750 Td
+14 TL
+(Intelligent Document Assistant Sample) Tj
+T*
+() Tj
+T*
+(This sample document describes a production-style retrieval augmented generation system.) Tj
+T*
+(The application lets users upload PDF files, extracts text, cleans the content, and splits the text into overlapping semantic chunks.) Tj
+T*
+(Each chunk is embedded and stored in a persistent ChromaDB vector database so future documents can be added without rebuilding the whole index.) Tj
+T*
+() Tj
+T*
+(When a user asks a question, the system retrieves the most relevant chunks, sends those chunks to the language model as context, and instructs the model to answer only from the uploaded documents.) Tj
+T*
+(The interface displays source file names, page numbers, chunk text, retrieval scores, response time, and retrieval latency.) Tj
+T*
+() Tj
+T*
+(The evaluation layer measures answer relevance, context relevance, faithfulness, hallucination risk, retrieval quality, and latency.) Tj
+T*
+(These metrics are saved to local history and displayed in a dashboard so engineers can monitor RAG quality over time.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1462
+%%EOF
