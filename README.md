@@ -126,7 +126,7 @@ DeepEval is included and can be enabled with `USE_DEEPEVAL=true`. The app also k
 
 ## Screenshots
 
-Add screenshots here after running the app:
+Upload Screen:
 <img width="1882" height="905" alt="upload" src="https://github.com/user-attachments/assets/de2bd4e8-f680-4f9f-adfd-d16860fc61d9" />
 
 
