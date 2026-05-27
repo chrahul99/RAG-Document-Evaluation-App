@@ -196,7 +196,7 @@ project/netlify-ui
 4. Run `streamlit run main.py --server.port 8501 --server.address 0.0.0.0`.
 5. Mount `data/` and `vectorstore/` as persistent volumes.
 
-## Resume Bullet Points
+## Bullet Points
 
 - Built a production-style RAG document assistant with Streamlit, LangChain, OpenAI/Ollama, and ChromaDB for multi-PDF question answering.
 - Implemented PDF ingestion, text cleaning, semantic chunking, persistent vector search, source attribution, and grounded answer generation.
