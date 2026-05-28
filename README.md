@@ -1,4 +1,4 @@
-# Intelligent Document Assistant(AI) with RAG and Evaluation Framework
+# Intelligent Document Assistant (AI) with RAG and Evaluation Framework
 
 A production-style AI application for uploading PDF documents, asking grounded questions, retrieving source evidence, and evaluating RAG answer quality. The project is designed to be resume-ready for AI Engineer and Software Engineer roles.
 
